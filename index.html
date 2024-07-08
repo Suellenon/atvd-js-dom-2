@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade dom</title>
-    <script src="dom.js" defer></script>
-   
+    <title>Atividade1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+
 </head>
+
 <body>
-    <h1 class="bem-vindo">
-       
-    </h1>
-<div>
-    <img src="./imgs/pic_bulboff.gif" alt="" id="lamp">
-</div>
-    <div>
-        <button id="ligar" > ligar</button>
-        <button id="desligar" > desligar</button>
+    <h1 id="boas-vindas"></h1>
+    <p> <strong>Questão 2</strong></p>
+    <div id="Fundo">
+
+        <img src="./imgs/pic_bulboff.gif" alt="lampada" id="lamp">
+        <button onclick="ligar()">Ligar</button>
+        <button onclick="desligar()">Desligar</button>
     </div>
-    <div>
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha">
+    <p>
+        <strong>Questão 3</strong>
+    </p>
+    <div id="campo">
+
+        <label for="password">Senha</label>
+        <input type="password" id="senha">
+        <img src="./imgs/olhoaberto.png" alt="" id="olho" width="25px" onclick="mostrarSenha()">
     </div>
+    <p>
+        <strong>Questão 4</strong>
+    </p>
+    <div>
+        <form action="">
+            <label for="password">Senha</label>
+            <input type="password" name="" id="Senha" required>
+            <label for="password">Confirmar Senha</label>
+            <input type="password" name="" id="confirmacao"required >
+            <button onclick="confirmarSenha()">Confirmar</button>
+        </form>
+        <p id="ponto">
+
+        </p>
+    <p><strong>Questão 5</strong></p>
+    <b>
+        <p>Calculadora</p>
+    </b>
+    <label for="number">Número 1</label>
+    <input type="number" name="" id="numero1">
+    <label for="number">Número 2</label>
+    <input type="number" name="" id="numero2">
+    <input  name="number" id="resultado" >
+    <button id="somar" onclick="somar()">Somar</button>
+    <button id="menos">Subtrair</button>
+    <button id="vezes">Multiplicar</button> 
+    <button id="dividir">Dividir</button>
+   
 </body>
+
 </html>
