@@ -1,7 +1,12 @@
 //Q1
-let nome = prompt("Qual seu nome?")
-let bem_vindo = document.getElementById('boas-vindas')
-bem_vindo.textContent = "Bem-vindo, " + nome
+ let nome = prompt("Qual seu nome?")
+ let bem_vindo = document.getElementById('boas-vindas')
+ bem_vindo.innerHTML =`Bem-vindo, ${nome}`
+
+// var nome = prompt("Qual seu nome?")
+
+// nome.document.write(`Bem vindoo,  ${nome}`)
+
 
 //Q2
 
@@ -58,8 +63,11 @@ function mostrarSenha() {
     const Senha = document.getElementById('Senha')
     const confirmacao = document.getElementById('confirmacao')
     const ponto = document.getElementById('ponto')
-    if (confirmacao === Senha ) {
-      ponto.textContent="ok"
+    if (confirmacao.value === Senha.value ) {
+    ponto.innerHTML="Ok"
+    ponto.style.color="blue"
+    
+
       
 
 
@@ -71,7 +79,8 @@ function mostrarSenha() {
        
      
     } else{
-       ponto.textContent="Senhas diferentes"
+       ponto.innerHTML="Senhas diferentes"
+        ponto.style.color="red"
     }
 
 
@@ -90,15 +99,11 @@ function mostrarSenha() {
 // var somar= document.getElementById('somar')
 // const multiplicar =document.getElementById('vezes')
 // const dividir= document.getElementById('dividir')
+   
+ 
 
-  function somar(){
-    var n1=document.getElementById('numero1')
-    var n2=document.getElementById('numero2')
-    var resultado =document.getElementById('resultado')
-    
    
 
-}
 
 
    
