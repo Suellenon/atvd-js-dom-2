@@ -94,20 +94,20 @@ function somar(){
    resultado.innerHTML= `Resultado: A soma de ${n1} + ${n2} é igual a ${r}`
 }
 function subtrair(){
-    s1 = Number(numero1.value)
-    s2= Number(numero2.value)
+    n1 = Number(numero1.value)
+    n2= Number(numero2.value)
      let r = n1 - n2
     resultado.innerHTML= `Resultado: A subtração de ${n1} - ${n2} é igual a ${r}`
  }
  function multiplicar(){
-    m1 = Number(numero1.value)
-    m2= Number(numero2.value)
+    n1 = Number(numero1.value)
+    n2= Number(numero2.value)
      let r= n1 * n2
     resultado.innerHTML= `Resultado: A multiplicação de ${n1} x ${n2} é igual a ${r}`
  }
  function dividir(){
-    d1 = Number(numero1.value)
-    d2= Number(numero2.value)
+    n1 = Number(numero1.value)
+    n2= Number(numero2.value)
      let r = n1 / n2
     resultado.innerHTML= `Resultado: A divisão de ${n1} : ${n2} é igual a ${r}`
  }
