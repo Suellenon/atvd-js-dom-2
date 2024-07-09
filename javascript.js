@@ -64,23 +64,15 @@ function mostrarSenha() {
     const confirmacao = document.getElementById('confirmacao')
     const ponto = document.getElementById('ponto')
     if (confirmacao.value === Senha.value ) {
-    ponto.innerHTML="Ok"
-    ponto.style.color="blue"
-    
-
+      ponto.innerHTML="Ok"
+      ponto.style.color="#666666"
       
-
-
-    
-
-    
-     
-     
        
      
     } else{
        ponto.innerHTML="Senhas diferentes"
-        ponto.style.color="red"
+       ponto.style.color="red"
+
     }
 
 
@@ -95,15 +87,35 @@ function mostrarSenha() {
 
 
 
-// const menos=document.getElementById('subtrair')
-// var somar= document.getElementById('somar')
-// const multiplicar =document.getElementById('vezes')
-// const dividir= document.getElementById('dividir')
-   
- 
 
-   
+const numero1=document.getElementById('numero1')
+const numero2=document.getElementById('numero2')
+const resultado = document.getElementById('resultado')
 
+function somar(){
+   n1 = Number(numero1.value)
+   n2= Number(numero2.value)
+    let r = n1 + n2
+   resultado.innerHTML= `Resultado: A soma de ${n1} + ${n2} é igual a ${r}`
+}
+function subtrair(){
+    n1 = Number(numero1.value)
+    n2= Number(numero2.value)
+     let r = n1 - n2
+    resultado.innerHTML= `Resultado: A subtração de ${n1} - ${n2} é igual a ${r}`
+ }
+ function multiplicar(){
+    n1 = Number(numero1.value)
+    n2= Number(numero2.value)
+     let r= n1 * n2
+    resultado.innerHTML= `Resultado: A multiplicação de ${n1} x ${n2} é igual a ${r}`
+ }
+ function dividir(){
+    n1 = Number(numero1.value)
+    n2= Number(numero2.value)
+     let r = n1 / n2
+    resultado.innerHTML= `Resultado: A divisão de ${n1} : ${n2} é igual a ${r}`
+ }
 
 
    
